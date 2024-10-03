@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mainContainer {
+    background-image: url('../../public/bg.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+    margin: 0;
+    top: 0%;
+  }
+  
+  .carouselContainer {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    padding-top: 2rem;
+  }
+  
+  .carouselContainer .wrapper {
+    width: 60vw;
+    height: 60vh;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    margin: 5rem auto;
+    overflow: hidden;
+  }
+  
+  .carouselContainer #slider1 {
+    background-image: url('/waste1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60vw;
+    height: 60vh;
+    display: block;
+  }
+  
+  .carouselContainer #slider2 {
+    background-image: url('/waste2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60vw;
+    height: 60vh;
+    display: block;
+  }
+  
+  .carouselContainer #slider3 {
+    background-image: url('/download (16).jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60vw;
+    height: 60vh;
+    display: block;
+  }
+  
+  .carouselContainer #slider4 {
+    background-image: url('/waste.avif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60vw;
+    height: 60vh;
+    display: block;
+  }
+  
+  .carouselContainer .wrapperHolder {
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    animation: slider 20s ease-in-out 1s infinite alternate;
+  }
+  
+  .carouselContainer .buttonHolder {
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+  }
+  
+  .carouselContainer .buttonHolder .button {
+    background-color: #80a7cc;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 0.3rem;
+    cursor: pointer;
+  }
+  
+  .carouselContainer .buttonHolder .button:hover {
+    background-color: #ccc;
+    box-shadow: 0px 0px 7px 4px rgba(0, 255, 255, 0.6);
+  }
+  
+  @keyframes slider {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }

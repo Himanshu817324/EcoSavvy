@@ -1,0 +1,57 @@
+/* Products Page CSS */
+
+/* Container */
+.products-page {
+  margin: 40px;
+  padding: 20px;
+  width: 95vw;
+  height: auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Product Grid */
+.prod {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.cart{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 25rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.cart ul li{
+  display: flex;
+  flex-direction: column;
+  height: 12rem;
+  width: 15rem;
+  justify-content: space-around;
+}
+
+
+.cart ul li img{
+  width: 10rem;
+  height: 10rem;
+}
+
+hr:not([size]) {
+  height: 1px;
+  width: 95vw;
+}

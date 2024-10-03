@@ -1,0 +1,128 @@
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  section {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 .8rem 3.2rem 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.7rem);
+    -webkit-backdrop-filter: blur(1.7rem);
+    border-radius: 1rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    margin-left: -8rem;
+  }
+
+  .cHead h1 {
+    background: rgb(238, 174, 202);
+    background: -moz-linear-gradient(
+      90deg,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(233, 175, 204, 1) 27%,
+      rgba(148, 187, 233, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(233, 175, 204, 1) 27%,
+      rgba(148, 187, 233, 1) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(233, 175, 204, 1) 27%,
+      rgba(148, 187, 233, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    margin: 1rem;
+  }
+
+  .inputElem {
+    display: flex;
+  }
+  
+  label {
+    display: inline;
+    margin-bottom: 10px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    background-color: #68a9ce;
+    border-radius: 1.5rem;
+  }
+
+textarea {
+  height: 10rem;
+}
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .sec ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin-left: -9rem;  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  a:hover {
+    color: #23527c;
+  }

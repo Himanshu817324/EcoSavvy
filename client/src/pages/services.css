@@ -1,0 +1,253 @@
+.contain {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.services {
+  background: rgb(238, 174, 202);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(233, 175, 204, 1) 27%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(233, 175, 204, 1) 27%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(233, 175, 204, 1) 27%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.services h1 {
+  color: #67b6ab;
+  margin-top: 1.4rem;
+  left: auto;
+}
+
+.servicesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.subSec {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+  width: calc(50% - 40px);
+}
+
+h1,h2{
+  margin-top: 0;
+  color: #ff004f;
+  
+}
+
+.subSec  p {
+  color: rgba(0, 0 , 0, 0.3);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+.servicesGrid section ul {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicesGrid section ul li {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+  
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 480px) {
+  .contain {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .services {
+    padding: 1rem;
+  }
+  .services h1 {
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+  }
+  .servicesGrid {
+    flex-direction: column;
+  }
+  .subSec {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+  .subSec h2 {
+    font-size: 1.2rem;
+  }
+  .subSec p {
+    font-size: 1rem;
+  }
+  .servicesGrid section ul {
+    flex-direction: column;
+  }
+  .servicesGrid section ul li {
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
+}
+
+/* Tablets */
+@media only screen and (max-width: 768px) {
+  .contain {
+    max-width: 80%;
+    margin: 30px auto;
+    padding: 15px;
+  }
+  .services {
+    padding: 1.5rem;
+  }
+  .services h1 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .servicesGrid {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .subSec {
+    width: calc(50% - 20px);
+    padding: 15px;
+    margin: 10px;
+  }
+  .subSec h2 {
+    font-size: 1.5rem;
+  }
+  .subSec p {
+    font-size: 1.2rem;
+  }
+  .servicesGrid section ul {
+    flex-direction: column;
+  }
+  .servicesGrid section ul li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Desktops */
+@media only screen and (min-width: 1024px) {
+  .contain {
+    max-width: 70%;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  .services {
+    padding: 2rem;
+  }
+  .services h1 {
+    font-size: 2rem;
+    margin-top: 1.2rem;
+  }
+  .servicesGrid {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .subSec {
+    width: calc(25% - 20px);
+    padding: 20px;
+    margin: 20px;
+  }
+  .subSec h2 {
+    font-size: 2rem;
+  }
+  .subSec p {
+    font-size: 1.5rem;
+  }
+  .servicesGrid section ul {
+    flex-direction: column;
+  }
+  .servicesGrid section ul li {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 1920px) {
+  .contain {
+    max-width: 60%;
+    margin: 50px auto;
+    padding: 25px;
+  }
+  .services {
+    padding: 2.5rem;
+  }
+  .services h1 {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+  }
+  .servicesGrid {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .subSec {
+    width: calc(20% - 20px);
+    padding: 25px;
+    margin: 25px;
+  }
+  .subSec h2 {
+    font-size: 2.5rem;
+  }
+  .subSec p {
+    font-size: 1.8rem;
+  }
+  .servicesGrid section ul {
+    flex-direction: column;
+  }
+  .servicesGrid section ul li {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+}

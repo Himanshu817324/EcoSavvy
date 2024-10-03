@@ -1,0 +1,12 @@
+[
+  {
+    "name": "John Doe",
+    "testimonial": "This product is amazing! It has revolutionized my workflow.",
+    "image": "admin.jpg"
+  },
+  {
+    "name": "Jane Smith",
+    "testimonial": "I was blown away by the customer support. They're super responsive!",
+    "image": "user.png"
+  }
+]

@@ -1,0 +1,129 @@
+footer {
+    padding: 20px;
+    text-align: center;
+    clear: both;
+    margin-bottom: 0;
+    background: linear-gradient(135deg, #3b82f6, #9333ea);
+    position: absolute;
+  }
+
+  
+  
+  .footer-container {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer-top{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top,.down{
+    display: flex;
+  }  
+
+  .footer-section {
+    flex-basis: 25%;
+    flex-direction: column;
+
+    margin: 20px;
+  }
+  
+  .footer-section h4 {
+    margin-top: 0;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    color: #dda0dd;
+  }
+  
+  .social-link {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-copyright p {
+    margin-bottom: 0;
+  }
+
+
+/* Media Queries */
+
+/* Large screens (desktops)
+@media (min-width: 1200px) {
+  .footer-container {
+    width: 80%;
+  }
+  .footer-section {
+    flex-basis: 20%;
+  }
+}
+
+/* Medium screens (laptops) */
+/* @media (min-width: 992px) and (max-width: 1199px) {
+  .footer-container {
+    width: 90%;
+  }
+  .footer-section {
+    flex-basis: 25%;
+  }
+}  */
+
+/* Small screens (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-container {
+    width: 100%;
+  }
+  .footer-section {
+    flex-basis: 33.33%;
+  }
+}
+
+/* Extra small screens (mobiles) */
+@media (max-width: 767px) {
+  footer{
+    width: 59rem;
+  }
+  .footer-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .footer-section {
+    flex-basis: 100%;
+    margin: 10px;
+  }
+  .footer-section ul {
+    flex-direction: column;
+  }
+  .footer-section li {
+    margin-bottom: 5px;
+  }
+}

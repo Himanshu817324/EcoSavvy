@@ -1,0 +1,172 @@
+
+  /* Navbar Styles */
+
+  header{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100vw;
+    background: linear-gradient(135deg, #3b82f6, #9333ea);
+    border-bottom: 1px solid #ddd;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  .navbar .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar .logo img{
+    margin-left: 2.2rem;
+    margin-right: 0;
+    border-radius: 50%;
+  }
+  
+  .navbar-brand {
+    font-size: 2rem;
+    margin-left: 1rem;
+    font-weight: bolder;
+    color: #d64ccb;
+    text-decoration: none;
+  }
+  
+  .navbar-brand:hover {
+    color: #23527c;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin-left: 50rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  ul li {
+    margin-right: 40px;
+  }
+  
+  ul li:last-child {
+    margin-right: 0;
+  }
+  
+  ul a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  ul a:hover {
+    color: #dda0dd;
+  }
+  
+  /* Active Link Style */
+  
+  ul a.active {
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid #337ab7;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    ul {
+      flex-direction: column;
+    }
+  
+    ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+/* Media Queries */
+
+/* Large screens (desktops)
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 1rem 3rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+  ul {
+    margin-left: 20rem;
+  }
+  ul li {
+    margin-right: 60px;
+  }
+  ul a {
+    font-size: 1.2rem;
+  }
+} */
+
+/* Medium screens (laptops) */
+/* @media (min-width: 992px) and (max-width: 1199px) {
+  .navbar {
+    padding: 1rem 2rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  ul {
+    margin-left: 15rem;
+  }
+  ul li {
+    margin-right: 40px;
+  }
+  ul a {
+    font-size: 1.1rem;
+  }
+} */
+
+/* Small screens (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+  }
+  ul {
+    margin-left: 10rem;
+  }
+  ul li {
+    margin-right: 20px;
+  }
+  ul a {
+    font-size: 1rem;
+  }
+}
+
+/* Extra small screens (mobiles) */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar .logo {
+    margin-bottom: 10px;
+  }
+  ul {
+    margin-left: 0;
+    flex-direction: column;
+  }
+  ul li {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  ul a {
+    font-size: 0.9rem;
+  }
+}
