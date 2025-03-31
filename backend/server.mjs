@@ -11,7 +11,11 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: ["https://eco-savvy-6dzqx1t2c-himanshu817324s-projects.vercel.app"],
+  methods: "GET, POST, PUT, DELETE",
+  credentials: true
+}));
 app.use(express.json());
 
 // Connect to MongoDB
